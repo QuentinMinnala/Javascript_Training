@@ -1,0 +1,44 @@
+// Assignment 1:Create variables for the following values and identify their datatype:
+console.log("------Assignment1------------");
+
+var num=25;
+var str="JavaScript";
+var bool=true;
+var val=undefined
+var val1=null;
+var decimal=123.45;
+let val3=12345678901234567890n;
+console.log(num);
+console.log(str);
+console.log(bool);
+console.log(val);
+console.log(val1);
+console.log(decimal);
+console.log(val3);
+console.log("print datatype of num:",typeof num);
+console.log("print datatype of str:",typeof str);
+console.log("print datatype of bool:",typeof bool);
+console.log("print datatype of val:",typeof val);    
+console.log("print datatype of val:",typeof val1);    
+console.log(typeof decimal);    
+console.log(typeof val3);    
+
+console.log("---------------Assignment 2-------------");    
+let str1 = "Hello, Quentin";
+let numberValue = 25;
+let boolean = true;
+let undefinedValue;
+let nullValue = null;
+let bigIntValue = 12345678901234567890n;
+let symbolValue = Symbol("mySymbol");
+let objectValue = { name: "John", age: 20 };
+
+// Print all variables
+console.log(str1);
+console.log(numberValue);
+console.log(boolean);
+console.log(undefinedValue);
+console.log(nullValue);
+console.log(bigIntValue);
+console.log(symbolValue);
+console.log(objectValue);
