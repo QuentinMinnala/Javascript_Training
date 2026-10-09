@@ -1,0 +1,38 @@
+console.log("----Question1----------");
+
+let ans=(1 + "2" + 3);
+console.log(ans);
+//Answer: 123
+console.log("----Question2----------");
+
+console.log((1 + 2 + "3"));
+//Answer: 33
+console.log("----Question3----------");
+console.log("5" * true);
+//Answer: 5
+console.log("----Question4----------");
+console.log(10 > 5 > 1);
+//Answer: 10>5=true, true>1= false
+console.log("----Question5----------");
+let a = 2;
+    let b = a++ + ++a;
+    console.log(a, b);
+    //Answer: 4, 6
+console.log("----Question6----------");
+let g = 3;
+    console.log(g++ + g++ + ++g);
+    //Answer: 3 + 4 + 6 = 13
+console.log("----Question7----------");
+console.log(5 * 2 == "10");
+//Answer: true
+console.log("----Question8----------");
+let x = 1;
+let y = ++x + x++ + x;
+console.log(x, y);
+//Answer: 3, 7
+console.log("----Question9----------");
+console.log(10 > 5 && 20 < 30);
+//Answer: true
+console.log("----Question10----------");
+console.log(null || undefined || "Playwright");
+//Answer: Playwright

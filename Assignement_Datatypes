@@ -1,4 +1,3 @@
-// Assignment 1:Create variables for the following values and identify their datatype:
 console.log("------Assignment1------------");
 
 var num=25;
@@ -43,3 +42,26 @@ console.log(bigIntValue);
 console.log(symbolValue);
 console.log(objectValue);
 
+console.log("---------------Assignment 4-------------");    
+let studentName = "Quentin Thomas";
+let studentAge = 30;
+let studentPercentage = 85.5;
+let hasCompletedCourse = true;
+let studentGrade = "A";
+console.log(studentName, typeof studentName);
+console.log(studentAge, typeof studentAge);
+console.log(studentPercentage, typeof studentPercentage);
+console.log(hasCompletedCourse, typeof hasCompletedCourse);
+console.log(studentGrade, typeof studentGrade);
+
+
+console.log("---------------Assignment 5------------");    
+let userName;
+let userEmail = null;
+
+// Printing values
+console.log("userName value:", userName);   
+console.log("userEmail value:", userEmail); 
+console.log(typeof userName);
+console.log(typeof userEmail);
+// 1. What is the difference between undefined and null? undefined means value not initialized, null means value is explicitly empty
