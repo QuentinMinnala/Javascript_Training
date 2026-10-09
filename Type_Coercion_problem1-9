@@ -1,0 +1,106 @@
+// Problem 1 — UI Price and Quantity: A product page returns the following values as strings:
+console.log("Problem 1-UI Price and Quantity and return value as strings");
+let price = "500";
+let quantity = "3";
+let price1 = Number(price);
+let quantity1 = Number(quantity);
+console.log(typeof price1, typeof quantity1);
+console.log("total price is: " + (price1 * quantity1)); 
+console.log("-------------------------------");
+
+console.log("Problem 2-UI Price + Tax and the UI returns");
+let price3 = "1000";
+let tax = "200";
+let price4 = Number(price3);
+let tax1 = Number(tax);
+console.log(typeof price4, typeof tax1);
+console.log("total price is: " + (price4 + tax1)); 
+console.log("-------------------------------");
+
+console.log("Problem 3-Understand + Coercion");
+let actual = "100";
+let expected = 20;
+// What will be the output of: 10020
+console.log(actual + expected); 
+console.log("-------------------------------");
+
+console.log("Problem 4-Understand - Coercion");
+let actual1 = "100";
+let expected1 = 20;
+// What will be the output of: 80
+console.log(actual1 - expected1);
+console.log("-------------------------------");
+
+console.log("Problem 5-UI Value and Assertion");
+// A UI displays:
+// 100
+// The automation code receives it as:
+let actualPrice1 = "100";
+let expectedPrice1 = 100;
+// Expected result of: True and false
+console.log(actualPrice1 == expectedPrice1); 
+console.log(actualPrice1 === expectedPrice1);
+console.log("-------------------------------");
+
+console.log("Problem 6-Fix the Assertion");
+//Modify the code so that the assertion gives:true
+let actualPrice = "500";
+let expectedPrice = 500;
+console.log(Number(actualPrice) === expectedPrice);
+console.log("-------------------------------");
+
+console.log("Problem 7-Environment Variable");
+// An automation framework reads the timeout from an environment variable:
+// Convert it into a number and print:The value,Its data type
+let timeout = "30000";
+let Nu = Number(timeout);
+console.log("print value: " + Nu);
+console.log("Its data type: " + typeof Nu);
+// Expected Output:
+// 30000
+// number
+console.log("-------------------------------");
+
+console.log("Problem 8-Order ID-converted to string");
+// An API returns:
+let orderId = 12345;
+let orderId_str = String(orderId);
+console.log("Order ID: " + orderId_str);
+console.log(typeof orderId);
+console.log(typeof orderId_str);
+// Convert the order ID into a string and create: ORDER-12345
+console.log("-------------------------------");
+
+console.log("Problem 9-Boolean API Value-convert to actual Boolean");
+// An API returns:
+let status = "true";
+// Convert this value into an actual Boolean.
+let status_bool=Boolean(status);
+console.log("Status: " + status_bool);
+console.log(typeof status_bool);
+console.log("-------------------------------");
+
+// Expected Output:// true and // boolean
+
+console.log("Problem 10-Input Field Value");
+// A Playwright test retrieves a quantity from an input field:
+let quantity_str = "5";
+// The expected quantity is:   
+let expectedQuantity = 5;
+if ((Number(quantity_str)) === expectedQuantity) 
+    {
+    console.log("Test Passed: The quantities match!");
+    }
+    else
+            console.log("Test Failed: The quantities do not match!");
+console.log("-------------------------------");
+
+console.log("Problem 11-Calculate Cart Total");
+// An e-commerce application provides:
+let price11 = "799";
+let quantity11 = "2";
+let discount11 = "100";
+// Calculate: (price × quantity) - discount
+// Expected Output:1498
+let cartTotal = (Number(price11)*Number(quantity11))-Number(discount11);
+console.log("Cart Total: " + cartTotal);
