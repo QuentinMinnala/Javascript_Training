@@ -1,12 +1,19 @@
-console.log("Hello, World!");
+// console.log("Hello, World!");
 
-let r=78;
+// let r=78;
 
-let s=++r;
-console.log(r);
-console.log(s);
-let r1=101;
+// let s=++r;
+// console.log(r);
+// console.log(s);
+// let r1=101;
 
-let s1=++r;
-console.log(r1);
-console.log(s1);
+// let s1=++r;
+// console.log("r1 value:"+r1);
+// console.log("s1 value:"+s1);
+
+let fact=1;
+for(let i=5;i>=1;i--)
+    {
+    fact=fact*i;
+console.log(fact);
+}
