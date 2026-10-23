@@ -1,6 +1,6 @@
 let enteredUsername = "Priyanka";   
 let enteredPassword = "nigade";
-if (enteredUsername === "Priyanka" && enteredPassword === "Nigade") 
+if (enteredUsername === "Priyanka" && enteredPassword  === "Nigade") 
 {
     console.log("Login successful");
 }   
