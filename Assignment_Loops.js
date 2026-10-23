@@ -10,6 +10,8 @@ for (let i = 2; i <= Math.sqrt(num); i++) {
     }
 }
 console.log(isPrime ? `${num} is prime` : `${num} is not prime`);
+console.log("--------------------------------------");
+
 
 console.log("----To Print Even Numbers using loop 1 to 50---");
 for (let j = 1; j <= 50; j++) {
@@ -17,13 +19,17 @@ for (let j = 1; j <= 50; j++) {
     console.log("even number list:" +j);
               }
 }
+console.log("--------------------------------------");
 
- console.log("---- multiplication table from 1 to 10 for a number---");
+
+console.log("---- multiplication table from 1 to 10 for a number---");
 let number =5;
 for (let m = 1; m <= 10; m++) {
     let result = number * m;
 console.log(`Multiplication of ${m} and ${number}: ${result}`);
 }
+console.log("--------------------------------------");
+
 
   console.log("----To calculate the factorial of a given positive integer---");
 let fact = 1;
@@ -32,6 +38,7 @@ for (let n=1; n<= 6; n++)
     fact*=n;  
 }
     console.log(fact);
+console.log("--------------------------------------");
 
 
  console.log("----To count the total number of digits present in a given number using a loop---");
@@ -43,6 +50,8 @@ let res = 0;
         res++;
     }
 console.log(res); 
+console.log("--------------------------------------");
+
 
 console.log("----To Print numbers from 1 to 20 and break at 10---");
 for (let k = 1; k <= 20; k++) {
@@ -52,6 +61,8 @@ for (let k = 1; k <= 20; k++) {
     else 
     console.log(k);
 }
+console.log("--------------------------------------");
+
 
 console.log("----To Print numbers from 1 to 20 skipping even numbers using continue---");
 for (let l = 1; l <= 20; l++) {
@@ -60,3 +71,30 @@ for (let l = 1; l <= 20; l++) {
     }
     console.log(l);
 }
+console.log("--------------------------------------");
+
+
+console.log("----To Print a 5 × 5 Star Pattern using nested loops---");
+for(let r=1;r<=5;r++)
+{
+    let row="";
+    for(let c=1;c<=5;c++)
+    {
+        row=row+" *";       
+    }
+    console.log(row);  
+}
+console.log("--------------------------------------");
+
+
+console.log("----To JavaScript program using nested loops for decreasing star pattern---");
+for(let r1=1;r1<=5;r1++)
+{
+    let row1="";
+    for(let c1=5;c1>=r1;c1--)
+    {
+        row1=row1+" *";       
+    }
+    console.log(row1);  
+}
+console.log("--------------------------------------");
