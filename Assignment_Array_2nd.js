@@ -109,3 +109,4 @@ console.log("REPLACED DATA:"+extract_tests);
 // Convert all failures into a single comma-separated string
 console.log("COMMA seperated:"+extract_tests.join(","));
 console.log("--------------------------------------");
+

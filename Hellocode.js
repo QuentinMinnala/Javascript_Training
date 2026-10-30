@@ -69,3 +69,58 @@ let index2=month.indexOf(index1+1);
 console.log("Index of mar: "+index2); //-1
 
 
+//number and string sorting
+let a=[48,34,67,89,13];
+a.sort((a,b)=>b-a);
+console.log(a);
+
+let a1=[`quentin`,`neethu`,`john`,`minnala`,`thomas`];
+console.log(a1.sort()); //output=>[ 'john', 'minnala', 'neethu', 'quentin', 'thomas' ]
+console.log(a1.sort().reverse()); //output=>[ 'thomas', 'quentin', 'neethu', 'minnala', 'john' ]
+
+//For each function
+const students = [
+  { name: "Emma", grade: "A" },
+  { name: "Liam", grade: "B" }
+];
+
+students.forEach((student) => {
+  console.log(`${student.name} received grade ${student.grade}`);
+});
+
+let user={
+    id:101,
+    name:"Jay",
+    profile:"Qa"
+}
+
+for(let i in user)
+{
+    console.log(i);//keys
+    
+}
+let numericData=new Array(4.5);
+console.log(numericData);
+console.log(numericData.length);
+
+let names = "rajini"
+let arr = [];
+let word;
+for (let i = 0; i < names.length; i++) {
+        if (i % 2 === 0) {
+        word = names[i].toUpperCase();
+       arr.push(word);
+    console.log(arr);
+    }
+        else {
+
+        word = names[i].toLowerCase();
+        arr.push(word);
+        console.log(arr);
+    }
+}
+console.log(arr.join(" "))
+
+let s3=new String("Hello");
+let s4=new String("Hello");
+console.log(s3===s4);
