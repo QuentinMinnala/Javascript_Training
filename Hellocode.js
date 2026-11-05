@@ -124,3 +124,16 @@ console.log(arr.join(" "))
 let s3=new String("Hello");
 let s4=new String("Hello");
 console.log(s3===s4);
+
+
+let doLogin=function(username,password)//2 parameters
+{   
+    console.log("Hello "+username);
+    console.log('Your login process completed!');
+     
+
+}
+
+//call
+doLogin("Admin","*****");
+
