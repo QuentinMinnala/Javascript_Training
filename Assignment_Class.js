@@ -53,6 +53,7 @@ console.log("----2.Class Problem-Bank Account Class-----");
         console.log("Check Balance of: "+this.accountname+" is "+this.balance);
     }
 }  accdata=new BankAccount("Annie",1000);
+  accdata.getcheckbalance();
   accdata.getdeposit(700);
   accdata.getwithdraw(250);
   accdata.getcheckbalance();

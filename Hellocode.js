@@ -126,14 +126,38 @@ let s4=new String("Hello");
 console.log(s3===s4);
 
 
-let doLogin=function(username,password)//2 parameters
-{   
-    console.log("Hello "+username);
-    console.log('Your login process completed!');
-     
+let footerLinks=['Aboutus','help','privacypolicy','brand'];
+let allLinks=footerLinks.map((link)=>{
+return "Amazon-"+link
+})
+console.log(allLinks);
+
+let num1=457356,rm=0,rev=0,temp=num1;
+
+while(num1>0)
+{
+    rm=num1%10;
+    num1=Math.floor(num1/10);
+    rev=rev*10+rm;
 
 }
 
-//call
-doLogin("Admin","*****");
+console.log(`Reverse number of ${temp} is: ${rev} `);
 
+let ss5="QA TESTING";
+
+console.log("Search string ends with framework!"+ss5.includes("TEST"));
+
+
+console.log(ss8+" "+ss9);//Hello All
+console.log(ss8.concat(" "+ss9));//Hello All
+
+console.log(ss8.concat(" "+[ss9,ss7]));//Hello All,Playwright Training!
+console.log(ss8.concat(" "+[ss9+" "+ss7]));//Hello All Playwright Training!
+console.log(ss8.concat(" "+ss9+" "+ss7));//Hello All Playwright Training!
+
+  let arr=[10,20,30,40,50]
+//index  +ve  0  1  2  3  4
+
+console.log(arr[3]);//40
+console.log(arr[-4]);//undefined
