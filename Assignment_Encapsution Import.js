@@ -9,6 +9,13 @@ stud_data.setStudent('Sangeetha',1101,'B');
 stud_data.getstudent();
 console.log("--------------------------------------");
 
+console.log("----2: Product-----")
+const product_data = new Product();
+product_data.setProduct(101,"cookware",44,30);
+product_data.getProduct(); 
+console.log("--------------------------------------");
+
+
 //create object for class student bank account
 console.log("----3:Bank Account-----")
 const balance=new BankAccount();
@@ -23,7 +30,3 @@ const marks = new Student_Marks();
 marks.setMarks('mini', 2012, 99);
 marks.getMarks(); 
 
-console.log("----2: Product-----")
-const product_data = new Product();
-product_data.setProduct(101,"cookware",44,30);
-product_data.getProduct(); 

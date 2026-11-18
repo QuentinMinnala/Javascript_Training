@@ -28,6 +28,40 @@ getstudent()
 }
 console.log("--------------------------------------");
 
+console.log("----2.Online Shopping-Product Class -----")
+export class Product
+{
+ #productId; 
+#productName;
+#price;
+#quantityInStock;
+
+constructor(productId,productName,price,quantityInStock)
+{
+        this.setProduct(productId, productName, price, quantityInStock);
+}
+setProduct(productId,productName,price,quantityInStock)
+  {
+     if (price <= 0 || quantityInStock < 0) {
+      console.log("Invalid price or quantity.");
+      return false;
+    }
+    // 2. Save all four private fields (make sure '#' is on #quantityInStock)
+    this.#productId = productId;
+    this.#productName = productName;
+    this.#price = price;
+    this.#quantityInStock = quantityInStock;
+    // 3. Return only at the very end
+    return true;
+  }
+    getProduct()
+  {
+    console.log("product ID is:"+this.#productId+ "Product name:" +this.#productName);
+        console.log("product price is:"+this.#price+ "Quantity InStock:" +this.#quantityInStock);
+  }
+}
+console.log("--------------------------------------");
+
 
 console.log("----3:Bank Account-----")
 export class BankAccount
@@ -99,53 +133,3 @@ getMarks()
 }
 console.log("--------------------------------------");
 
-console.log("----2.Online Shopping – Product Class -----")
-export class Product
-{
- #productId; 
-#productName;
-#price;
-#quantityInStock;
-
-constructor(productId,productName,price,quantityInStock)
-{
-        this.setProduct(productId, productName, price, quantityInStock);
-}
-setProduct(productId,productName,price,quantityInStock)
-  {
-     if (price <= 0 || quantityInStock < 0) {
-      console.log("Invalid price or quantity.");
-      return false;
-    }
-    // 2. Save all four private fields (make sure '#' is on #quantityInStock)
-    this.#productId = productId;
-    this.#productName = productName;
-    this.#price = price;
-    this.#quantityInStock = quantityInStock;
-    // 3. Return only at the very end
-    return true;
-  }
-    getProduct()
-  {
-    console.log("product ID is:"+this.#productId+ "Product name:" +this.#productName);
-        console.log("product price is:"+this.#price+ "Quantity InStock:" +this.#quantityInStock);
-  }
-}
-// Build a JavaScript class Product that stores the following product 
-// details: 
-// • productId – number 
-// • productName – string 
-// • price – number 
-// • quantityInStock – number 
-// Requirements 
-// 1. All fields must be private using JavaScript private fields (#). 
-// 2. Provide public getters and setters for all fields. 
-// 3. Add validation to the setters: 
-// o price must be greater than 0. 
-// o quantityInStock must be 0 or greater. 
-// 4. productName should not be empty. 
-// 5. Create an object of the Product class. 
-// 6. Use the public setters to set or modify product details. 
-// 7. Use the public getters to retrieve and display product details. 
-// 8. Try accessing a private field directly from outside the class and 
-// observe what happens. 
