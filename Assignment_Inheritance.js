@@ -47,3 +47,37 @@ class Car extends Vehicle
 const myCar = new Car();
 myCar.start();
 console.log("--------------------------------------");
+
+
+console.log("----3. E-Commerce Scenario-----")
+class Product
+{
+    constructor(p_name,price)
+    {
+        this.p_name=p_name;
+        this.price=price;
+
+    }
+        displayProduct() 
+       {
+        console.log("Productname:"+this.p_name);
+       console.log("Productname:"+this.price);
+
+        }
+}
+class ElectronicProduct extends Product
+{
+    constructor(p_name,price,warranty)
+    {
+    super(p_name,price);
+    this.warranty=warranty;
+    }
+        displayProduct1() 
+       {
+        super.displayProduct(); // Call parent class start() method
+       console.log("warranty:"+this.warranty);
+        }
+}
+const electronics = new ElectronicProduct("Washing Machine", 27000, "10 years");
+electronics.displayProduct1();
+console.log("--------------------------------------");
